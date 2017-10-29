@@ -5,7 +5,7 @@ Optimized for University of Arizona HPC Ocelote System. Code derived from Jeff O
     
     $ git pull https://github.com/jetjr/HPC-inaturalist-sdm.git
 
-1. Create a list of taxon ids to get observations and create SDMs in a file called "list". This "list" file should be stored in the root github directory.
+Create a list of taxon ids to get observations and create SDMs in a file called "list". This "list" file should be stored in the root github directory.
 
     $ pwd
     /home/u1/jamesthornton/HPC-butterfly-sdm
@@ -22,8 +22,8 @@ Optimized for University of Arizona HPC Ocelote System. Code derived from Jeff O
     58481
     58507
 
-2. Submit the job
+Submit the job
 
     $ ./submit
 
-3. Output will be stored in inaturalist_sdm directory
+Output will be stored in inaturalist_sdm directory
