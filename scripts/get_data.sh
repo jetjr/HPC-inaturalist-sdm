@@ -15,6 +15,6 @@ module load R
 
 cd "$CWD"
 
-for id in $(cat test_list); do
+for id in $(cat list); do
   $SCRIPT_DIR/get-observation-data.R $id
 done
