@@ -9,8 +9,8 @@ if [[ ! -d "$SCRIPT_DIR" ]]; then
 fi
 
 if [[ ! -d "$OUT_DIR" ]]; then
-    echo "$FASTA_DIR does not exist. Job terminated."
-    exit 1
+    echo "$OUT_DIR does not exist. Directory created for output."
+    mkdir -p "$OUT_DIR"
 fi
 
 if [[ ! -d "$STDERR_DIR" ]]; then
