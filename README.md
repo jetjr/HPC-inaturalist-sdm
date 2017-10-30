@@ -8,10 +8,12 @@ Optimized for University of Arizona HPC Ocelote System. Code derived from Jeff O
 Dependencies (one time only): The R scripts used in this workflow use some packages that must be installed prior to executing this job. Do the following one time only:
 
     $ module load R
-    $ install.packages("raster")
-    $ install.packages("sp")
-    $ install.packages("dismo")
-    $ install.packages("maptools")
+    $ R
+    > install.packages("raster")
+    #Select mirror if prompted
+    > install.packages("sp")
+    > install.packages("dismo")
+    > install.packages("maptools")
 
 Create a list of taxon ids to get observations and create SDMs in a file called "list". This "list" file should be stored in the root github directory.
 
