@@ -1,0 +1,6 @@
+# IGNORE PNGS AND RASTER FILES
+
+*.txt
+*.png
+*.grd
+*.gri
