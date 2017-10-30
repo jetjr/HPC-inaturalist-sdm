@@ -3,7 +3,7 @@ Optimized for University of Arizona HPC Ocelote System. Code derived from Jeff O
 
 ## Instructions
     
-    $ git pull https://github.com/jetjr/HPC-inaturalist-sdm.git
+    $ git clone https://github.com/jetjr/HPC-inaturalist-sdm
 
 Dependencies (one time only): The R scripts used in this workflow use some packages that must be installed prior to executing this job. Do the following one time only:
 
