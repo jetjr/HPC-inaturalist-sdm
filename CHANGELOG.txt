@@ -1,0 +1,4 @@
+## 2016-10-24 - run-sdm.R
+* Assign month to observation (line 79): Cut date/time field to store month of the observation.
+* Get and assign most common species name (line 82-84): Find the most common "common name" and assign to all observations.
+* Month plot generation (line 176-273): For each month with an observation, create SDM and raster files.

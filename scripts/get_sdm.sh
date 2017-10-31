@@ -9,12 +9,16 @@
 #PBS -M netid@email.arizona.edu
 #PBS -m bea
 
+#LOAD R
 module load R
 
+#MOVE INTO DIRECTORY CONTAINING OBSERVATIONS
 cd $FILE_DIR
 
+#STORE ALL OBSERVATIONS FILES INTO LIST
 ls *.txt > list
 
+#FOR OBSERVATION FILE IN LIST, RUN SDM TO GENERATE MAPS
 for file in $(cat list); do
  
   ID=$(basename $file | cut -d '-' -f 1)

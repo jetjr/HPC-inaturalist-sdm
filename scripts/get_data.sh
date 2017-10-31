@@ -9,12 +9,13 @@
 #PBS -M netid@email.arizona.edu
 #PBS -m bea
 
+#LOAD R
 module load R
 
-#DIRECTORY CONTAINING get-observation-data script
-
+#MOVE INTO HPC-inaturalist-SDM
 cd "$CWD"
 
+#FOR TAXONOMY ID IN LIST, GET RESEARCH GRADE OBSERVATIONS
 for id in $(cat list); do
   $SCRIPT_DIR/get-observation-data.R $id
 done
